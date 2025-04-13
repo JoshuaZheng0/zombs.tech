@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ranged Enemy Test</title>
+    <style>
+        body { 
+            margin: 0; 
+            overflow: hidden; 
+            background-color: #000000;
+        }
+        canvas { display: block; }
+        #healthDisplay {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            color: #00ff00;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 24px;
+            text-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
+        }
+        #instructions {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #00ff00;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 20px;
+            text-align: center;
+            text-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
+            pointer-events: none;
+            display: none;
+        }
+        #instructions.visible {
+            display: block;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="healthDisplay">Health: 100</div>
+    <div id="instructions" class="visible">Click to start</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/PointerLockControls.min.js"></script>
+    <script src="ranged_enemy_test.js"></script>
+</body>
+</html> 
